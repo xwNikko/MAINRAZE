@@ -1,0 +1,183 @@
+/* ===== ESTILOS GENERALES ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f5;
+  color: #333;
+}
+
+h2,
+h3 {
+  color: #2c3e50;
+}
+
+/* ===== MENÚ ===== */
+.topheader {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000; /* verde azulado sólido */
+}
+
+.topheader .logo img {
+  display: block;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.Menu-Horizontal li {
+  position: relative;
+}
+
+.Menu-Horizontal li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.Menu-Horizontal li a:hover {
+  color: #e91e63; /* fucsia para resaltar */
+}
+
+.Menu-Vertical {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #8e44ad; /* morado sólido */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  border-radius: 5px;
+}
+
+.Menu-Vertical li a {
+  padding: 10px;
+  color: white;
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+/* ===== SECCIÓN PRODUCTOS ===== */
+.seccion-productos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  background-color: #ecf0f1;
+}
+
+.sdiv-gral-prod {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+}
+
+/* TEXTO */
+.div-pro-texto {
+  flex: 1;
+}
+
+/* VIDEO */
+.div-pro-video {
+  flex: 1;
+}
+
+.div-pro-video iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== SECCIÓN FORMULARIO ===== */
+.div-cont-formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #4d4d4d; 
+  padding: 30px;
+  border-radius: 12px;
+  color: white; /* letras blancas */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative; 
+  font-family: "Roboto", Arial, sans-serif;
+
+/* Títulos */
+.div-cont-formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Texto y listas */
+.div-cont-formulario label,
+.div-cont-formulario p,
+.div-cont-formulario li {
+  color: white;
+  font-family: "Roboto", Arial, sans-serif;
+  margin-bottom: 5px; 
+  display: block; 
+}
+
+.campo {
+  margin-bottom: 20px; 
+}
+
+/* Inputs y selects */
+.campo input[type="text"],
+.campo select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 5px; 
+}
+
+/* CHECKBOX Y RADIO */
+.lista-checkbox li,
+.lista-radio li {
+  margin-bottom: 5px;
+  color: white;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* BOTÓN ENVIAR */
+.boton-enviar {
+  background-color: #f8f8f8; 
+  color: black; 
+  border: none;
+  padding: 8px 12px; 
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+  transition: 0.3s;
+}
+
+.boton-enviar:hover {
+  background-color: #16a085; 
+}

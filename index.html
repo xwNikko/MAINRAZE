@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BeatMusic</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <!-- LOGO Y MENUS -->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img
+          height="80px"
+          width="100px"
+          src="imagen/logo.png"
+          alt="Logo BeatMusic"
+        />
+      </a>
+      <ul class="Menu-Horizontal">
+        <li><a href="">Inicio</a></li>
+        <li>
+          <a href="">Servicios</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Producciones</a></li>
+            <li><a href="">Podcast</a></li>
+            <li><a href="">Canciones</a></li>
+          </ul>
+        </li>
+        <li><a href="">Contactanos</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECCION PRODUCTOS -->
+    <section class="seccion-productos">
+      <div class="sdiv-gral-prod">
+        <!-- TEXTO -->
+        <div class="div-pro-texto">
+          <h2>Bienvenido a BeatMusic</h2>
+          <p>
+            BeatMusic es el lugar donde la pasión por la música se convierte en
+            creación. Aquí puedes producir tus propias canciones, escuchar
+            nuestros podcasts y descubrir nuevos talentos. Nuestro objetivo es
+            ayudarte a llevar tu arte al siguiente nivel, ya seas cantante,
+            productor o simplemente un amante de la música.
+          </p>
+
+          <h3>¿Qué puedes hacer en BeatMusic?</h3>
+          <ul>
+            <li>Crear y grabar tus propias producciones.</li>
+            <li>
+              Escuchar podcasts con artistas y expertos del mundo musical.
+            </li>
+            <li>
+              Promocionar tus canciones para que más personas te conozcan.
+            </li>
+          </ul>
+
+          <h3>Nuestra misión</h3>
+          <p>
+            Dar voz a quienes sueñan con ser escuchados. En BeatMusic creemos
+            que cada ritmo cuenta una historia, y queremos ayudarte a contar la
+            tuya.
+          </p>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="div-pro-video">
+          <iframe
+            src="https://www.youtube.com/embed/BUjdnxgBgzM"
+            title="Music Production with FL Studio - Full Tutorial for Beginners"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN FORMULARIO -->
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+
+        <form class="formulario">
+          <!-- NOMBRE -->
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+
+          <!-- PAÍS -->
+          <div class="campo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un país</option>
+              <option value="peru">Perú</option>
+              <option value="brazil">Brasil</option>
+              <option value="colombia">Colombia</option>
+              <option value="argentina">Argentina</option>
+            </select>
+          </div>
+
+          <!-- INTERESES -->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="produccion" />
+                  Producción musical</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="podcast" />
+                  Podcast</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="canciones" />
+                  Canciones</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- SEXO -->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="masculino" />
+                  Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="femenino" />
+                  Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- BOTÓN ENVIAR -->
+          <div class="campo">
+            <button type="submit" class="boton-enviar">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="imagen/logo.png" alt="Logo" class="footer-logo" />
+            <p>BeatMusic</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
